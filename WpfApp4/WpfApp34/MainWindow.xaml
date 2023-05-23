@@ -60,10 +60,9 @@ Foreground="White"
 Click="BtnAdd_Click" />
         <ListBox x:Name="ListBoxData"
 Grid.Row="2"
-Grid.Column="1"
 ScrollViewer.VerticalScrollBarVisibility="Visible"
 Padding="10 0"
-BorderThickness="1" Margin="0,0,0,71" />
+BorderThickness="1" Margin="119,10,1,61" Grid.ColumnSpan="2" />
         <StackPanel Grid.Row="4"
 Grid.Column="0"
 Grid.ColumnSpan="2"

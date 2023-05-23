@@ -30,27 +30,11 @@ namespace WpfApp34
         }
         private void BtnOKClick(object sender, RoutedEventArgs e)
         {
-            int leng = ListBoxData.Items.Count;
-            int[] mass = new int[leng];
-            for (int i = 0; i < leng; i++)
-                mass[i] = Convert.ToInt32(ListBoxData.Items[i]);
-            int a = mass[0], b = mass[1];
-            double count = 0;
-            if (leng == 2)
-            {
-                for (int i = 1; i <= b; i++)
-                {
-                    count = Pow(a, i);
-                    TextBlockAnswer.Text += Convert.ToString($"{a} в {i} степени = " + count + "\n");
-                }
-
-            }
-            else
-                MessageBox.Show("Введено более 1 значения");
+            
 
         }
 
-        private void BtnAdd_Click(object sender, RoutedEventArgs e)
+            private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
             if ((String.IsNullOrEmpty(TbNumber.Text)))
             {
