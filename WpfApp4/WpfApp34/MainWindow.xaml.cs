@@ -31,11 +31,26 @@ namespace WpfApp34
         private void BtnOKClick(object sender, RoutedEventArgs e)
         {
             
-
+            int leng = ListBoxData.Items.Count;
+            double[] mass = new double[leng];
+            int count = 0;
+            for (int i = 0; i < leng; i++)
+            {
+                mass[i] = Convert.ToInt32(ListBoxData.Items[i]);
+            }
+            double a = mass[0];
+            for (int i = 0; i <= mass[1]-mass[0]; i++)
+            {
+                if (a % 2 == 0)
+                    count++;
+                a++;
+            }
+            TextBlockAnswer.Text = Convert.ToString(count);
+            ListBoxData.Items.Clear();
         }
 
             private void BtnAdd_Click(object sender, RoutedEventArgs e)
-        {
+            {
             if ((String.IsNullOrEmpty(TbNumber.Text)))
             {
                 return;
@@ -53,7 +68,7 @@ namespace WpfApp34
                 MessageBox.Show(ex.Message);
             }
             ListBoxData.Items.Add(TbNumber.Text);
-        }
+            }
     }
     }
 
