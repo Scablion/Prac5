@@ -32,20 +32,20 @@ Grid.Column="0"
 HorizontalAlignment="Left"
 VerticalAlignment="Center"
 Margin="10,6,0,6" Height="18" Width="45" />
-        <TextBlock Text="Входные данные"
+        <TextBlock Text="A"
 Grid.Row="2"
 Grid.Column="0"
 HorizontalAlignment="Left"
 VerticalAlignment="Top"
 Margin="10,10,0,0" Height="17" Width="98" />
-        <TextBlock x:Name="TextBlockAnswer"
+        <ListBox x:Name="TextBlockAnswer"
 ScrollViewer.VerticalScrollBarVisibility="Visible"
 Grid.Row="2"
 Grid.Column="0"
 Grid.ColumnSpan="2"
 HorizontalAlignment="Stretch"
 VerticalAlignment="Stretch"
-Margin="119,103,10,10" Grid.RowSpan="2" />
+Margin="61,54,10,10" Grid.RowSpan="2" />
         <TextBox x:Name="TbNumber"
 Grid.Row="1"
 Grid.Column="1"
@@ -62,7 +62,7 @@ Click="BtnAdd_Click" />
 Grid.Row="2"
 ScrollViewer.VerticalScrollBarVisibility="Visible"
 Padding="10 0"
-BorderThickness="1" Margin="119,10,1,61" Grid.ColumnSpan="2" />
+BorderThickness="1" Margin="119,10,1,101" Grid.ColumnSpan="2" />
         <StackPanel Grid.Row="4"
 Grid.Column="0"
 Grid.ColumnSpan="2"
@@ -85,5 +85,11 @@ Click="BtnCancelClick" />
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Margin="12,103,0,0" Height="17" Width="98" ><Run Text="Ответ"/><Run Text=":"/></TextBlock>
+        <TextBlock Text="N"
+            Grid.Row="2"
+            Grid.Column="0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="10,32,0,0" Height="17" Width="98" />
     </Grid>
 </Window>

@@ -51,6 +51,7 @@ namespace WpfApp34
             }
             else
                 MessageBox.Show("Введено более 1000 значений");
+            ListBoxData.Items.Clear();
 
         }
 

@@ -47,6 +47,7 @@ namespace WpfApp34
             }
             else
                 MessageBox.Show("Введено более 2 значений");
+            ListBoxData.Items.Clear();
 
         }
 

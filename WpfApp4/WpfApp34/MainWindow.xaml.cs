@@ -33,19 +33,15 @@ namespace WpfApp34
             
             int leng = ListBoxData.Items.Count;
             double[] mass = new double[leng];
-            int count = 0;
             for (int i = 0; i < leng; i++)
             {
                 mass[i] = Convert.ToInt32(ListBoxData.Items[i]);
             }
-            double a = mass[0];
-            for (int i = 0; i <= mass[1]-mass[0]; i++)
+            for (int i = 1; i <= mass[1]; i++)
             {
-                if (a % 2 == 0)
-                    count++;
-                a++;
+                TextBlockAnswer.Items.Add(Convert.ToString($"{mass[0]} в {i} степени = {Pow(mass[0],i)}"));
             }
-            TextBlockAnswer.Text = Convert.ToString(count);
+            
             ListBoxData.Items.Clear();
         }
 
